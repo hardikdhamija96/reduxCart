@@ -1,11 +1,10 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='flex bg-blue-200 h-[70px] justify-between px-8 items-center font-bold'>
-        <span className='text-2xl'>Redux Cart</span>
-        <div className='flex gap-5'>
+    <div className='flex bg-blue-300 h-[10vh] justify-between px-8 items-center font-bold text-blue-950'>
+        <span className='text-3xl'>Redux Cart</span>
+        <div className='flex gap-5 text-[1.1rem]'>
             <Link to="/">Home</Link>
             <Link to="/cart">Cart</Link>
             <span>
