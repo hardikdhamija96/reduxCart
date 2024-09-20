@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 
 
 const Navbar = () => {
+  //subscribing to cart using useSelector
+  // useSelector requires selector function
   const cartItem = useSelector((state)=>state.cart);
 
   // useEffect(()=>{
