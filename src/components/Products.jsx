@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { addItem } from "../../store/cartSlice";
+import { addItem } from "../store/cartSlice";
 import { useDispatch } from "react-redux";
 
 const Products = () => {
@@ -15,7 +15,7 @@ const Products = () => {
     fetchProducts();
   }, []);
 
-  function handleAdd(product){
+  function handleAdd(product) {
     // add product in redux store
     // we dispatch action from here
     dispatch(addItem(product));
@@ -36,7 +36,9 @@ const Products = () => {
             <h3 className="text-sm text-gray-800 font-bold">
               Rs.{product.price}
             </h3>
-            <button onClick={()=>handleAdd(product)} className="border-2 border-neutral-900 rounded-lg px-2 py-1">
+            <button
+              onClick={() => handleAdd(product)}
+              className="border-2 border-neutral-900 rounded-lg px-2 py-1">
               Add to Cart
             </button>
           </div>
